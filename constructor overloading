@@ -1,0 +1,29 @@
+public class Employee {
+	int id;
+	String name;
+	double salary;
+	Employee(int i, String n)
+	{
+		id =i;
+		name = n;
+	}
+	Employee(int i, String n, double d)
+	{
+		id =i;
+		name = n;
+	    salary = d;
+	}
+	public void display()
+	{
+		System.out.println("ID = "+id+ "name= "+name+ "salary= "+ salary);
+	}
+
+	public static void main(String[] args) {
+		Employee obj = new Employee(101,"yash");
+		obj.display();
+		Employee obj1 = new Employee(102,"deepak",578.09);
+		obj1.display();
+		
+	}
+
+}
